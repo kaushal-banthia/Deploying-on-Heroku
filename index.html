@@ -1,0 +1,27 @@
+<!DOCTYPE html lang="en">
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js" crossorigin="anonymous"></script>
+  <title>Toe Touch</title>
+</head>
+
+<body>
+  <div class="container">
+    <video class="input_video" id="input_video"></video>
+    <canvas class="output_canvas" width="1000px" height="500px"></canvas>
+  </div>
+
+  <div id="text" style = "font-size: 100px;"></div>
+  <button onclick="downloadImage()">Download Image</button>
+
+  <audio id="beep-sound"><source src="beep.mp3" type="audio/mpeg"></audio>
+  <audio id="front-sound"><source src="front.mp3" type="audio/mpeg"></audio>
+  <audio id="side-sound"><source src="side.mp3" type="audio/mpeg"></audio>
+  <audio id="start"><source src="startTime.mp3" type="audio/mpeg"></audio>
+<script src="toeTouch.js"></script>
+</body>
+</html>
